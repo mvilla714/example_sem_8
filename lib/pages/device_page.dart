@@ -106,8 +106,24 @@ class _DevicePageState extends State<DevicePage> {
                       child: Card(
                         shadowColor: Colors.black,
                         child: Container(
-                          //margin: EdgeInsets.all(5),
-                          color: Colors.black12,
+                          margin: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade100,
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(8.0),
+                              topRight: Radius.circular(8.0),
+                              bottomLeft: Radius.circular(8.0),
+                              bottomRight: Radius.circular(8.0),
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black,
+                                  offset: Offset(1, 1),
+                                  blurRadius: 3)
+                            ],
+                          ),
+                          // color: Colors.black12,
+
                           width: 100,
                           height: 130,
                           child: Center(
@@ -154,23 +170,41 @@ class _DevicePageState extends State<DevicePage> {
                             );
                           },
                           child: Card(
-                            color: Colors.white70,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Icon(
-                                  devices[index].iconDevice,
-                                  size: 50,
-                                  color: Colors.indigo[900],
+                            color: Colors.grey.shade100,
+                            child: Container(
+                              margin: EdgeInsets.all(20),
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade100,
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(8.0),
+                                  topRight: Radius.circular(8.0),
+                                  bottomLeft: Radius.circular(8.0),
+                                  bottomRight: Radius.circular(8.0),
                                 ),
-                                SizedBox(
-                                  height: 5,
-                                ),
-                                Text(
-                                  devices[index].typeDevice,
-                                  style: TextStyle(color: Colors.indigo[900]),
-                                ),
-                              ],
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.black,
+                                      offset: Offset(1, 1),
+                                      blurRadius: 2)
+                                ],
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    devices[index].iconDevice,
+                                    size: 50,
+                                    color: Colors.indigo[900],
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Text(
+                                    devices[index].typeDevice,
+                                    style: TextStyle(color: Colors.indigo[900]),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         );

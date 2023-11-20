@@ -129,14 +129,15 @@ class _DetailDeviceState extends State<DetailDevice> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      color: Colors.grey.shade100,
-                      borderRadius: BorderRadius.circular(5),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(1, 1),
-                            blurRadius: 5)
-                      ]),
+                    color: Colors.grey.shade100,
+                    borderRadius: BorderRadius.circular(5),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(1, 1),
+                          blurRadius: 5)
+                    ],
+                  ),
                   height: 50,
                   width: 200,
                   //color: Colors.amber,
