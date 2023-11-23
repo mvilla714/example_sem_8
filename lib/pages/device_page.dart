@@ -34,7 +34,7 @@ class _DevicePageState extends State<DevicePage> {
           onDevice: true),
       DeviceModel(
           typeDevice: "Refrigeradora",
-          iconDevice: Icons.icecream,
+          iconDevice: Icons.kitchen_rounded,
           factoryDevice: "LG",
           modelDevice: "LG 125",
           macDevice: "02:3d:d3:4r:45",
